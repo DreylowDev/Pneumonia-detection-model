@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="">
+        <img class="logo" src="./images/logo2.png" alt="logo" />
+      </a>
+      <a class="home-button" href="/">HOME</a>
+    </div>
+    <div class="grid-container">
+      <div class="item1">
+        <span class="hero-text1">PNEUMONIA</span>
+        <br />
+        <span class="hero-text2">DETECTION</span>
+        <h2 class="text-one">
+          Pneumonia is a form of acute respiratory infection that affects the
+          lungs.The lungs are made up of small sacs called alveoli, which fill
+          with air when a healthy person breathes. When an individual has
+          pneumonia, the alveoli are filled with pus and fluid, which makes
+          breathing painful and limits oxygen intake.
+        </h2>
+      </div>
+      <div class="item2">
+        <h3 class="text-two">SOME KEY FACTS ABOUT PNUEMONIA</h3>
+
+        <ul class="text-three">
+          <li>
+            Pneumonia accounts for 14% of all deaths of children under 5 years
+            old, killing 740 180 children in 2019.
+            <br />
+          </li>
+          <li>
+            Pneumonia can be caused by viruses, bacteria, or fungi.
+            <br />
+          </li>
+          <li>
+            Pneumonia can be prevented by immunization, adequate nutrition, and
+            by addressing environmental factors.
+            <br />
+          </li>
+          <li>
+            Pneumonia caused by bacteria can be treated with antibiotics, but
+            only one third of children with pneumonia receive the antibiotics
+            they need.
+          </li>
+        </ul>
+        <h2 class="text-four">
+          To tackle the problem of wrong diagonosis, we built a model to detect
+          pneumonia in patients by just uploading an image of your x-ray scan
+        </h2>
+        <p class="para-one">Will you like to try it out?</p>
+
+        <a href="index.html#upload">
+          <button class="get-started" href>
+            <p class="button-text">Get Started</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="second-section" id="upload">
+      <!-- <p class="second-text">UPLOAD YOUR IMAGE AND OUR MODEL WILL PREDICT</p> -->
+      <input
+        class="file-upload-input"
+        type="file"
+        onchange="readURL(this)"
+        accept="Image/*"
+      />
+      <br />
+      <a href=""
+        ><button class="predict" id="predict">
+          <p class="predict-text">PREDICT</p>
+        </button></a
+      >
+    </div>
+  </body>
+</html>
